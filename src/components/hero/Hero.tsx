@@ -33,7 +33,7 @@ const Hero = () => {
       transition:{
         repeat:Infinity,
         duration:20,
-        repeatType:"mirror"
+        repeatType: "mirror" as const
       }
     }
   }
@@ -50,7 +50,7 @@ const Hero = () => {
           <motion.img src="/scroll.png" alt=""variants={textVariants} animate="scrollbtn" />
         </motion.div>
       </div>
-      <motion.div className="slidingtext" variants={sliderVariants} initial="inittial" animate="animate">
+      <motion.div className="slidingtext" variants={sliderVariants} initial="initial" animate="animate">
         Web React Next.js Node.js Express.js MongoDB Mongoose Firebase
       </motion.div>
       <div className="imageContainer">
