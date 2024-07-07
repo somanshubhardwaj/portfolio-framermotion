@@ -53,9 +53,7 @@ const Hero = () => {
       <motion.div className="slidingtext" variants={sliderVariants} initial="initial" animate="animate">
         Web React Next.js Node.js Express.js MongoDB Mongoose Firebase
       </motion.div>
-      <div className="imageContainer">
-        <img src="/hero.png" alt="" />
-      </div>
+      
     </div>
   );
 };

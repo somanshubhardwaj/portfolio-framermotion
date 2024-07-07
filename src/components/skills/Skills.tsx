@@ -1,6 +1,6 @@
 import "./skill.scss";
 import { motion, Variants, useInView } from "framer-motion";
-import { createRef, useRef } from "react";
+import {  useRef } from "react";
 
 const variant: Variants = {
   hidden: {
@@ -18,22 +18,18 @@ const variant: Variants = {
 };
 
 const Skills = () => {
-  const ref = useRef<HTMLDivElement>();
-  const isInvView = useInView(ref, {  });
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInvView = useInView(ref, {});
 
   return (
-    <motion.div className="skills">
+    <motion.div
+      className="skills"
+      variants={variant}
+      animate={isInvView ? "visible" : "hidden"}
+      ref={ref}
+    >
       <div className="skillscontainer">
-        <motion.div
-          className="aboutme"
-          style={{
-            opacity: 0,
-            y: 100,
-          }}
-          variants={variant}
-          animate={isInvView ? "visible" : "hidden"}
-          ref={ref}
-        >
+        <motion.div className="aboutme" variants={variant}>
           <h1>About Me</h1>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -42,20 +38,20 @@ const Skills = () => {
             tempora perferendis saepe.
           </span>
         </motion.div>
-        <motion.div className="skillsimage">
+        <motion.div className="skillsimage" variants={variant} >
           <img src="https://skillicons.dev/icons?i=git,docker,css,express,firebase,github,html,js,md,mongodb,nextjs,nodejs,npm,py,react,sass,tailwind,ts,vercel,vite&perline=6" />
         </motion.div>
       </div>
       <div className="git">
-        <h1>Github Stats</h1>
+        <motion.h1 variants={variant}>Github Stats</motion.h1>
         <div className="stats">
           <motion.img
             src="https://github-readme-stats.vercel.app//api/top-langs?username=somanshubhardwaj&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false"
-            alt=""
+            alt="" variants={variant}
           />
           <motion.img
             src="https://github-readme-stats.vercel.app/api?username=somanshubhardwaj&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false"
-            alt=""
+            alt="" variants={variant}
           />
         </div>
       </div>

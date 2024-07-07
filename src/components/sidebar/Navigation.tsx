@@ -14,16 +14,14 @@ const variants = {
 export const Navigation = () => (
   <motion.ul variants={variants} className="navigationList">
     {navigationItems.map(item => (
-      <MenuItem i={item.title} key={item.id} />
+      <MenuItem i={item.title} id={item.id} key={item.id} />
     ))}
   </motion.ul>
 );
 
 
 const navigationItems=[
-  {id:0, title:"Home", icon:"home"},
-  {id:1, title:"About", icon:"user"},
-  {id:2, title:"Portfolio", icon:"briefcase"},
-  {id:3, title:"Contact", icon:"mail"},
-  {id:4, title:"Blog", icon:"book"}
+  { title:"Home",id:"home"},
+  { title:"Skills",id:"skills"},
+  { title:"Portfolio",id:"portfolio"},
 ]

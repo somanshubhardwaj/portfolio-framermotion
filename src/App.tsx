@@ -11,21 +11,20 @@ function App() {
     <div className="">
       <Sidebar />
 
-      <section>
+      <section id="home">
         <Navbar />
         <Hero />
       </section>
-      <section>
+      <section id="skills">
         <Parallax type={"skills"} />
       </section>
       <section>
         <Skills />
       </section>
-      <section>
+      <section id="portfolio">
         <Parallax type={"portfolio"} />
       </section>
       <Portfolio />
-     
     </div>
   );
 }

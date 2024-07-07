@@ -19,14 +19,15 @@ const variants = {
 };
 
 
-export const MenuItem = ({ i }: { i: string }) => {
+export const MenuItem = ({ i,id }: { i: string ,id:string}) => {
   return (
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-   <span className="sidebarItem"> {i}</span>  
+      <a href={`#${id}`}>
+   <span className="sidebarItem"> {i}</span> </a> 
     </motion.li>
   );
 };
