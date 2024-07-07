@@ -1,0 +1,71 @@
+.skills {
+  display: flex;
+  max-width: 1366px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+
+  .skillscontainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+
+    .aboutme {
+     
+      margin: auto;
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      text-align: justify;
+    }
+
+    .skillsimage {
+      margin: auto;
+    }
+  }
+
+  .git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-direction: column;
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .aboutme {
+      width: 100%;
+    }
+    .skillscontainer,
+    .git {
+      width: 100%;
+    }
+  }
+}

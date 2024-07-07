@@ -4,6 +4,8 @@ import { Sidebar } from "./components/sidebar/sidebar";
 import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
+import Skills from "./components/skills/Skills";
+
 function App() {
   return (
     <div className="">
@@ -16,12 +18,14 @@ function App() {
       <section>
         <Parallax type={"skills"} />
       </section>
-      <section>skills</section>
+      <section>
+        <Skills />
+      </section>
       <section>
         <Parallax type={"portfolio"} />
       </section>
       <Portfolio />
-      <section>contact</section>
+     
     </div>
   );
 }
