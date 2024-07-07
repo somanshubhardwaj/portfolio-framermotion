@@ -1,5 +1,6 @@
 .portfolio {
   position: relative;
+
   .progress {
     position: sticky;
     top: 0;
@@ -8,11 +9,13 @@
     text-align: center;
     color: orange;
     font-size: 26px;
+
     .progressBar {
       height: 4px;
       background-color: white;
     }
   }
+
   .container {
     display: flex;
     justify-content: center;
@@ -29,6 +32,7 @@
       justify-content: center;
       gap: 50px;
       height: 100%;
+
       .imagecontainer {
         flex: 1;
         height: 50%;
@@ -39,22 +43,58 @@
           object-fit: cover;
         }
       }
+
       .textcontainer {
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        h2{
-            font-size: 72px;
-        }p{
-            font-size: 20px;
+
+        h2 {
+          font-size: 52px;
         }
-        button{
-            background-color: orange;
-            border: none;
-            border-radius: 10px;
-            width: 200px;
-            padding: 10px;
+
+        p {
+          font-size: 20px;
+        }
+
+        button {
+          background-color: orange;
+          border: none;
+          border-radius: 10px;
+          width: 200px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    .container {
+      .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        height: 100%;
+
+        .imagecontainer {
+          height: 50%;
+          padding: 18px;
+        }
+
+        .textcontainer {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 50%;
+          h2 {
+            font-size: 48px;
+          }
+
+          p {
+            font-size: 16px;
+          }
         }
       }
     }

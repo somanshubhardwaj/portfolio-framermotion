@@ -53,7 +53,7 @@ const SingleItem = ({ title, img, desc }: SingleItemProps) => {
    // offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300,300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-100,100]);
 
   return (
     <section >

@@ -3,6 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
 * {
   margin: 0;
   padding: 0;
