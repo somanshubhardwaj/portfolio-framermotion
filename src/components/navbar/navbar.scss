@@ -1,7 +1,7 @@
-@import  '../../app.scss';
+@import "../../app.scss";
 .navbar {
   height: 100px;
- 
+
   .wrapper {
     max-width: 1366px;
     margin: auto;
@@ -13,7 +13,7 @@
     span {
       font-weight: bold;
       @include mobile {
-  display: none;
+        display: none;
       }
     }
     .social {
@@ -25,7 +25,6 @@
       @include mobile {
         margin-left: auto;
         margin-top: 10px;
-  
       }
     }
   }
