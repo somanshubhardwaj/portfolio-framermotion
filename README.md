@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# My Portfolio Website
 
-Currently, two official plugins are available:
+Welcome to my portfolio website project! This site showcases my skills, projects, and experiences as a web developer. Built with React and styled with SCSS, it features smooth animations and transitions for a dynamic user experience, thanks to Framer Motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Home Section**: Introduces the visitor to the site with a captivating hero section.
+- **Skills Section**: Displays my technical skills in a visually appealing way, with animations to engage the viewer.
+- **Portfolio Section**: A collection of my projects, each with a link to its GitHub repository for more details.
+- **Parallax Effects**: Utilizes Framer Motion to create engaging parallax scrolling effects that enhance the visual experience.
+- **Responsive Design**: Ensures a seamless experience across various devices and screen sizes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: For building the user interface.
+- **TypeScript**: For adding static type definitions to enhance code quality and understandability.
+- **SCSS**: For styling, with a focus on modular and reusable components.
+- **Framer Motion**: For animations and motion effects.
+- **Vercel**: For hosting and deploying the website.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Setup and Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/somanshubhardwaj/portfolio-framermotion.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio-framermotion
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   The site should now be running on [http://localhost:3000](http://localhost:3000).
+
+## Contributing
+
+I'm always looking to improve my portfolio and welcome contributions. If you have suggestions or want to contribute, please fork the repository and create a pull request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/somanshubhardwaj) or visit my [GitHub](https://github.com/somanshubhardwaj) for more projects.
